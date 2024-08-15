@@ -1,0 +1,2283 @@
+/* <style type="text/css"> */
+:root {
+    --as-verde-agua-med: #059A9A;
+    --as-azul: #0066BA;
+    --as-preto-cinza: #333;
+    --neutral-1-light: #FCFDFE;
+    --as-cinza-80: #585858;
+}
+
+/* Remover em producao */
+.px1920 {
+    display: block;
+}
+.px1440 {
+    display: none;
+}
+.px992 {
+    display: none;
+}
+.px768 {
+    display: none;
+}
+.px425 {
+    display: none;
+}
+
+/* ----- Attention: Overrides Tray ----- */
+.page-content {
+    background: var(--neutral-1-light, #FCFDFE);
+}
+
+/* Colors */
+.verde-agua-med {
+    color: var(--as-verde-agua-med, #059A9A);
+}
+
+.verde-dark {
+    color: var(--as-verde-dark, #008080);
+}
+
+.azul {
+    color: var(--as-azul, #0066BA);
+}
+
+/* Paddings específicos */
+.adf_page .adf-pb-15 {
+    padding: 0 0 1.5em 0;
+}
+
+.adf_page .adf-pb-12 {
+    padding: 0 0 1.2em 0;
+}
+
+.adf_page .adf-pb-10 {
+    padding: 0 0 1em 0;
+}
+
+.adf_page .adf-pb-095 {
+    padding: 0 0 0.95em 0;
+}
+
+.adf_page .adf-pb-09 {
+    padding: 0 0 0.9em 0;
+}
+
+.adf_page .adf-pb-07 {
+    padding: 0 0 0.75em 0;
+}
+
+.adf_page .adf-pb-05 {
+    padding: 0 0 0.5em 0;
+}
+
+.adf_page .adf-pb-04 {
+    padding: 0 0 0.4em 0;
+}
+
+.adf_page .adf-pb-03 {
+    padding: 0 0 0.3em 0;
+}
+
+.adf_page .adf-pb-027 {
+    padding: 0 0 0.27em 0;
+}
+
+.adf_tc {
+    text-align: center;
+}
+
+.adf_page .adf_mt {
+    padding: 100px 0 0 0;
+}
+
+/* Remover em producao */
+.adf_page .dev {
+    position: fixed;
+    z-index: 1000;
+    top: 20px;
+    right: 20px;
+    padding: 4px 10px;
+    background: #008080;
+    border-radius: 10px;
+    display: none;
+}
+
+.adf_page .dev p {
+    text-align: center;
+    font-size: 12px;
+    padding: 0;
+    color: #fff;
+    line-height: 14px;
+    text-align: right;
+    display: none;
+}
+
+body {
+    background: #D9D9D9;
+    background: #fff;
+}
+
+.adf_page {
+    font-family: 'Poppins';
+    max-width: 1270px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    background: #D9D9D9;
+    background: #fff;
+}
+
+.adf_page * {
+    margin: 0;
+    padding: 0;
+}
+
+.adf_container {
+    padding: 0 27px;
+    margin: 0 auto;
+    background: var(--neutral-1-light, #FCFDFE);
+}
+
+/* p, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+} */
+
+.adf_page h1 {
+    /* Desktop/Headings/H1 Bold */
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 112.5% */
+}
+
+.adf_page h2 {
+    /* Desktop/Headings/H2 Light */
+    font-family: 'Poppins';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+}
+
+.adf_page h3 {
+    font-family: 'Poppins';
+    font-weight: 700;
+}
+
+.adf_page p {
+    color: var(--as-preto-cinza, #333);
+
+    /* Desktop/Paragraph/Paragraph 20pt normal */
+    font-family: 'Poppins';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 140% */
+    padding: 0 0 1.1em 0;
+}
+
+.adf_page a {
+    font-family: 'Poppins';
+    /* text-decoration: none; */
+    color: var(--as-verde-agua-med, #059A9A);
+
+}
+
+.adf_page a:visited {
+    font-family: 'Poppins';
+    /* text-decoration: none; */
+    color: var(--as-verde-agua-med, #059A9A);
+}
+
+.space {
+    height: 100px;
+    background: var(--neutral-1-light, #FCFDFE);
+}
+
+.space-50 {
+    height: 50px;
+    background: var(--neutral-1-light, #FCFDFE);
+}
+
+/* ----- Section 1 ----- */
+.adf_grid0 {
+    /* padding: 0 27px; */
+}
+.adf_gridLR {
+    display: grid;
+    grid-template-columns: calc(50% - 15px) calc(50% - 15px);
+    column-gap: 30px;
+}
+
+.gridLeft {
+    display: grid;
+    grid-template-columns: 100%;
+}
+
+.gridBottom {
+    padding: 0 5%;
+}
+
+/* Section 1: Green Air SS500-PRO */
+.grid1 {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    border-radius: 26px;
+    background: var(--as-gradient-fundo-claro-e-branco, linear-gradient(180deg, #DEF0F4 0%, #FFF 30%, #FFF 100%));
+    padding: 40px 5%;
+    margin-top: 100px;
+    column-gap: 5%;
+}
+
+.grid1 .grid1-left h1 {
+    padding: 0 0 1.5em 0;
+}
+
+.grid1 .grid1-left p {
+    padding: 0 120px 1.1em 0;
+}
+
+.grid1>.grid1-right {
+    display: flex;
+    flex-direction: column;
+    padding: 0 0px 0 0;
+    /* justify-items: left; */
+}
+
+.grid1>.grid1-right>div {
+    /* outline: 1px red solid; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+    /* margin-top: calc(-124px); */
+}
+
+.grid1-right {
+    /* margin-top: -20%; */
+    position: relative;
+    padding: 0;
+}
+
+.grid1-right img.section1-purificador {
+    width: 100%;
+    padding: 0;
+}
+
+.gridLeft .grid1-right img.section1-purificador {
+    width: 100%;
+    padding: 0;
+    margin-top: -40px;
+    /* background: red; */
+}
+
+.gridRight .grid1-right img.section1-purificador {
+    width: 100%;
+    padding: 0;
+    /* background: blue; */
+    /* transform: translateY(-80px); */
+    margin-top: -80px;
+    margin-top: -50%;
+}
+
+.grid1-right img.selos {
+    position: absolute;
+    width: 68%;
+    padding: 0;
+    /* padding: 0 0 0 22%; */
+    margin-top: 0%;
+    bottom: -21%;
+    right: 20%;
+    /* align-self: center; */
+}
+
+.grid1-right img.anos5 {
+    width: 30%;
+    position: absolute;
+    right: 6%;
+    top: 30%;
+}
+
+/* Section 2: Caracteristicas */
+.grid2selos {
+    display: grid;
+    grid-template-columns: 100%;
+    /* justify-content: center; */
+    border-radius: 26px;
+    background: var(--as-verdinho-fundo-claro-azulzinho, linear-gradient(180deg, #DEFAF7 0%, #DCEFFF 100%));
+    row-gap: 50px;
+    padding: 0 0 50px 0;
+}
+.adf_grid_garantia_selos {
+    /* position: absolute; */
+    display: grid;
+    grid-template-columns: 0.35fr 0.85fr 0.35fr;
+    grid-template-columns: 18% calc(64% - 180px) 18%;
+    column-gap: 90px;
+    /* margin: 0 auto; */
+    margin-top: -40px;
+    padding: 0 19%;
+    align-items: center;
+}
+.adf_grid_garantia_selos img {
+    width: 100%;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    /* justify-items: center; */
+    /* align-items: center; */
+    padding: 0 9%;
+    gap: 5%;
+    
+    /* margin: 0 30px; */
+    position: relative;
+    /* justify-content: center; */
+}
+
+.grid2>div {
+    text-align: center;
+}
+
+.grid2 img {
+    margin-bottom: 20px;
+}
+
+.grid2 .covid-bkg, .grid2 .ionizador-bkg {
+    border-radius: 32px;
+    background: var(--as-verde-neon, #84F5E9);
+    width: 86px;
+    height: 84px;
+    margin: 0 auto 20px auto;
+}
+
+.grid2 .covid-bkg img, .grid2 .ionizador-bkg img {
+    padding: 14px 0;
+}
+
+.grid2 .ionizador-bkg img {
+    padding: 18px 0;
+}
+
+.grid2 p {
+    padding: 0;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+
+
+.ionizador-bkg {
+    margin-bottom: 20px;
+}
+
+/* Section 3: Principais indicacoes */
+.principais {
+    padding: 0;
+    text-align: center;
+}
+
+.grid_principais {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 12%;
+    margin-bottom: 30px
+}
+
+.grid_principais p {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    text-align: left;
+    color: var(--as-azul-cinza, #39556D);
+}
+
+.principais img {
+    width: 100%;
+    border-radius: 26px;
+}
+
+.principais img.tablet {
+    display: none;
+}
+
+.principais h1 {
+    padding: 92px 0 50px 92px;
+    font-size: 32px;
+    line-height: 36px;
+}
+
+/* Section 4: Está presente */
+.clientes {
+    background: var(--as-azulzin-p-branco, linear-gradient(180deg, #DCEFFF 0%, #FCFDFE 100%));
+    padding: 200px 0px 140px 0px;
+    margin-top: -130px;
+}
+
+.clientes p {
+    /* padding: 0; */
+    text-align: center;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 0 120px;
+}
+
+.grid3 {
+    display: flex;
+    /* grid-template-columns: repeat(5, 1fr); */
+    justify-content: space-around;
+    /* justify-items: right; */
+    align-items: center;
+    padding: 0 10%;
+    gap: 5%;
+    margin-top: 40px;
+
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.grid3 img {
+    width: 100%;
+}
+
+/* .grid3 img:nth-child(4) {
+    width: 110%;
+}
+
+.grid3 img:nth-child(5) {
+    width: 80%;
+} */
+
+/* Section 5: Portatil */
+.grid4 {
+    margin: 100px 0;
+    border-radius: 26px;
+    /* background: url("https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_purificadorfamiliacachorro.png"); */
+    background-image: url("https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_mulher_espreguicando_1920.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 65%;
+    
+}
+
+.grid4 h1 {
+    padding: 40px 0 27px 0;
+}
+
+.grid4>div {
+    max-width: 46%;
+    padding: 20px 10px 10px 98px;
+}
+
+.grid4 p {
+    font-size: 20px;
+    line-height: 28px;
+    color: var(--as-cinza-80, #585858);
+}
+
+.grid4 p.link {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--as-cinza-80, #585858);
+}
+
+/* Section 6: video1 Ha 14 anos */
+.adf_grid_video {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.video_1 {
+    /* padding: 0 72px; */
+    text-align: center;
+    /* margin-top: 107px; */
+}
+
+.video_1 h1 {
+    padding: 0 0 23px 0;
+}
+
+.videoContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+
+.videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.videoContainerVert {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 542px;
+}
+
+.videoWrapperVert {
+    position: relative;
+    width: 304px;
+  }
+
+.videoWrapperVert iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 304px;
+    height: 542px;
+}
+
+/* ----- Section 6.5: Avaliacao ----- */
+.avaliacao {
+    /* background: var(--as-verdinho-fundo-claro-azulzinho, linear-gradient(180deg, #DEFAF7 0%, #DCEFFF 100%)); */
+    padding: 100px 0 50px 0;
+    margin-top: 150px;
+    border-radius: 26px;
+    border: 1px solid rgba(238, 238, 238, 0.4);
+    /* opacity: 0.4; */
+    background: linear-gradient(0deg, #FFF 0%, rgba(132, 245, 233, 0.4) 100%);
+    /* mix-blend-mode: multiply;     */
+}
+
+.stars-center {
+    display: flex;
+    justify-content: center;
+    margin-top: -121px;
+    margin-bottom: 50px;
+}
+
+.stars {
+    display: grid;
+    grid-template-columns: repeat(5, 50px);
+}
+
+.grid65 {
+    display: grid;
+    grid-template-columns: 29% 29% 29%;
+    padding: 50px;
+    gap: 6.5%;
+    border-radius: 26px;
+}
+
+.avaliacao p {
+    font-size: 16px;
+}
+
+.consumidor {
+    display: grid;
+    grid-template-columns: 40% 1fr;
+}
+
+.consumidor p {
+    display: inline;
+    color: var(--as-verde-agua-dark, #08688F);
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.avaliacoes_link_grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+.avaliacoes_link_grid p {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--as-cinza-80, #585858);
+}
+
+.avaliacoes_link_grid a {
+    text-decoration: underline;
+}
+
+/* Section 7: 8 Estagios */
+.container-estagios {
+    padding: 0;
+    /* margin-top: 642px; */
+    display: grid;
+    grid-template-columns: calc(50% - 18px) calc(50% - 18px);
+    column-gap: 36px;
+    /* padding-top: 140px; */
+    padding-bottom: 50px;
+}
+
+.estagios {
+    box-shadow: 0px 0px 0px 4px rgba(0, 0, 0, 0.01);
+    padding: 60px 36px 30px 50px;
+    padding: 60px 0px 30px 0px;
+    border-radius: 10px;
+    /* margin-top: 50px; */
+    background: #fff;
+}
+
+.estagios h1 {
+    text-align: center;
+    color: var(--as-azul, #0066BA);
+    font-size: 32px;
+    line-height: 36px; /* 112.5% */
+    margin-bottom: 1em;
+    padding: 0 20px;
+}
+
+.estagios h3 {
+    color: var(--as-azul-cinza, #39556D);
+    font-size: 20px;
+    text-align: center;
+    line-height: 24px;
+    margin-bottom: 2em;
+}
+
+.grid5 {
+    display: grid;
+    grid-template-columns: calc(50% - 6px) calc(50% - 6px);
+    grid-template-columns: 100%;
+    align-items: center;
+    column-gap: 12px;
+}
+
+.estagios-destaque {
+    text-align: center;
+}
+
+.grid5 img {
+    width: 70%;
+    transform: translateX(-10%);
+}
+
+.grid5 img.ale_estagios_ss500pro {
+    width: 64%;
+    transform: translateX(-5%);
+}
+
+.grid6 {
+    display: grid;
+    grid-template-columns: 48px calc(100% - 48px - 20px);
+    column-gap: 20px;
+    row-gap: 5px;
+    align-items: center;
+    grid-auto-rows: 1fr;
+    padding: 0px 36px 0px 50px;
+}
+
+.grid6 img {
+    width: 100%;
+    transform: translateX(0);
+}
+
+.grid6 p {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0;
+}
+
+.grid7 {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    padding: 0px 0px 0px 50px;
+    margin-top: 28px;
+}
+
+.grid7 h1 {
+    text-align: left;
+    padding: 10px 0px 10px 0px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.grid7 img {
+    width: 100%;
+}
+
+.grid7 .desktop {
+    display: block;
+}
+
+.grid7 .tablet {
+    display: none;
+}
+
+/* ----- Section 7.5: Duvidas ----- */
+.adf_duvidas {
+    border-radius: 26px;
+    background: var(--as-verde-dark, #008080);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin: 80px 0 80px 0; */
+    gap: 10px;
+}
+
+.adf_shadow_hack {
+    padding-bottom: 10px;
+}
+
+
+.adf_duvidas p {
+    color: var(--as-brancofull, #FFF);
+    text-align: center;
+    padding: 40px 0 30px 0;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.adf_duvidas span {
+    color: var(--as-verde-neon, #84F5E9);
+    margin-left: 10px;
+}
+
+/* ----- Section 7.6: Protege contra gases -----  */
+.gases {
+    background: var(--as-azulzin-p-branco, linear-gradient(180deg, #DCEFFF 0%, #FCFDFE 100%));
+
+}
+
+
+/* Section 8: Modo Noturno */
+.noturno {
+    margin: 0;
+    border-radius: 26px;
+    background: url(https://images.tcdn.com.br/img/editor/up/1086843/adf_stockphotoserenecalmafricanamericanwomansleepingincomfortablebedlyingonsoftpilloworthopedic1444222010_1_deg_square.png);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 96px 37% 84px 36px;
+    /* margin-top: 87px; */
+}
+
+.grid9 {
+    display: grid;
+    grid-template-columns: 100px calc(100% - 55px);
+    /* max-width: 63%; */
+    align-items: center;
+    column-gap: 55px;
+    /* padding: 106px 0 94px 0; */
+    /* padding: 200px; */
+}
+
+.grid9 p {
+    color: var(--as-brancofull, #FFF);
+    font-size: 24px;
+    padding: 0;
+    font-weight: 100;
+    line-height: 32px;
+}
+
+.grid9 img {
+    width: 100px;
+}
+
+.green {
+    color: var(--as-verde-neon, #84F5E9);
+}
+
+/* Mais detalhes */
+.adf_mais_detalhes {
+    text-align: center;
+    background: var(--neutral-1-light, #FCFDFE);
+    padding: 0 0 50px 0;
+}
+
+.adf_mais_detalhes h1 {
+    font-size: 32px;
+    line-height: 36px;
+    font-weight: 700;
+    margin-bottom: 100px;
+}
+
+.adf_grid_mais_detalhes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+
+}
+
+.adf_grid_mais_detalhes_left {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    border-radius: 26px;
+    background: var(--as-azulzinho-clarinho, #DEF0F4);
+    align-items: center;
+    position: relative;
+    padding: 10% 0 10% 5%;
+    justify-items: left;
+}
+
+.adf_mais_h13_image img {
+    width: 34%;
+    position: absolute;
+    right: 30px;
+    bottom: -40px
+}
+
+.adf_mais_h13_text h2 {
+    color: var(--as-verde-agua-med, #059A9A);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+}
+
+.adf_mais_ss500_text h2 {
+    color: var(--as-verde-agua-med, #059A9A);
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: left;
+    /* padding-left: 10%; */
+}
+
+.adf_mais_ss500_image img {
+    width: 40%;
+    position: absolute;
+    right: 10px;
+    bottom: -72px
+}
+
+/* Section 10: Certificacoes e INMETRO */
+.certificacoes {
+    /* padding: 0 240px; */
+    background: linear-gradient(180deg, #DCEFFF 0%, #FCFDFE 100%);
+    margin-top: 207px;
+}
+
+.certificacoes .wrapper {
+    padding: 36px 72px;
+    background: white;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* outline: 1px solid red; */
+    transform: translateY(-100px);
+    padding-bottom: 100px;
+    border-radius: 26px;
+}
+
+.certificacoes h1 {
+    padding: 0 0 78px 0;
+}
+
+.certificacoes a {
+    color: var(--as-azul, #0066BA);
+    text-decoration: none;
+}
+
+.certificacoes a:visited {
+    color: var(--as-azul, #0066BA);
+}
+
+.grid10 {
+    display: grid;
+    grid-template-columns: 29% 26% 19% 17%;
+    gap: 3%;
+}
+
+.grid10 p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.flex10 {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: start;
+}
+
+.flex10>div {
+    height: 172px;
+    display: flex;
+    align-items: end;
+}
+
+.ale_sgs {
+    margin: 60px auto 0 auto;
+    padding: 0 20%;
+}
+
+.ale_sgs img {
+    width: 100%;
+    border-radius: 25px;
+    filter: drop-shadow(0 0 5px rgba(0,0,0,0.2));
+}
+
+.dados {
+    margin: 60px 0 0 0;
+}
+
+.dados h1 {
+    color: var(--as-azul-cinza, #39556D);
+    padding: 0 0 45px 0;
+}
+
+.grid11 {
+    display: grid;
+    grid-template-columns: 20% 75%;
+    column-gap: 5%;
+    /* justify-items: right; */
+}
+
+.grid11 p:not(.desc) {
+    text-align: right;
+}
+
+.grid11 p {
+    color: var(--as-azul-cinza, #39556D);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.grid11_importante {
+    display: grid;
+    grid-template-columns: 20% 75%;
+    column-gap: 5%;
+}
+
+.grid11_importante .cdc {
+    overflow-wrap: break-word;
+}
+
+.grid11_importante p {
+    color: var(--as-azul-cinza, #39556D);
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.desktop {
+    display: block;
+}
+
+.mobile {
+    display: none;
+}
+
+/* Desktop 1440 px */
+@media (min-width: 1440px) and (max-width: 1919px) {
+    /* Remover em producao */
+    .px1920 {
+        display: none;
+    }
+    .px1440 {
+        display: block;
+    }
+    .px992 {
+        display: none;
+    }
+    .px768 {
+        display: none;
+    }
+    .px425 {
+        display: none;
+    }
+
+    /* Section 5: Portatil */
+    .grid4 {
+        /* margin: 100px 0; */
+        /* border-radius: 26px; */
+        /* background: url("https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_purificadorfamiliacachorro_1440.jpg"); */
+        background-image: url("https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_mulher_espreguicando_1440.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        background-position-x: 60%;
+    }
+
+    .grid4>div {
+        max-width: 45%;
+    }
+
+    .grid1-right {
+        /* margin-top: -20%; */
+    }
+
+    .videoContainer {
+        width: 80%;
+    }
+
+    .grid10 {
+        display: grid;
+        grid-template-columns: 40% 40%;
+        gap: 3%;
+        margin-top: 90px;
+    }
+
+    .flex10 {
+        gap: 20px;
+    }
+
+    .flex10>div {
+        height: 50px;
+    }
+}
+
+
+/* Tablet 992 px */
+@media (min-width: 992px) and (max-width: 1439px) {
+    /* Remover em producao */
+    .px1920 {
+        display: none;
+    }
+    .px1440 {
+        display: none;
+    }
+    .px992 {
+        display: block;
+    }
+    .px768 {
+        display: none;
+    }
+    .px425 {
+        display: none;
+    }
+
+    .adf_page h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .adf_page h2 {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .adf_page p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* Section 1: Green Air SS500-PRO */
+    .grid1 {
+        display: grid;
+        grid-template-columns: 60% 38%;
+        column-gap: 2%;
+    }
+
+    .grid1 .grid1-left h1 {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 15em;
+    }
+
+    .grid1 .grid1-left h2 {
+        font-size: 18px;
+        line-height: 24px;
+        /* max-width: 15em; */
+    }
+
+    .grid1 .grid1-left p {
+        padding: 0 0 1.1em 0;
+    }
+
+    .grid1 .grid1-left p {
+        font-size: 20px;
+        line-height: 28px;
+        /* max-width: 15em; */
+    }
+
+    .grid1>.grid1-right {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 0 0px 0 0;
+    }
+
+    .grid1>.grid1-right>div {
+        /* outline: 1px red solid; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        /* margin-top: calc(-124px); */
+    }
+
+    .grid1-right {
+        margin-top: 0%;
+        padding: 0 5%;
+    }
+
+    .grid1-right img.section1-purificador {
+        width: 100%;
+        padding: 0;
+        margin-top: 60px;
+    }
+
+    .grid1-right img.selos {
+        position: absolute;
+        width: 80%;
+        padding: 0;
+        /* padding: 0 0 0 22%; */
+        margin-top: 0%;
+        bottom: -27%;
+        /* align-self: center; */
+        right: unset;
+    }
+
+    .grid1-right img.anos5 {
+        width: 38%;
+        position: absolute;
+        right: 6%;
+        top: 44%;
+    }
+
+    .gridRight .grid1-right img.section1-purificador {
+        /* width: 60%; */
+        margin-top: -40%;
+    }
+
+    /* Section 2: Caracteristicas */
+    .grid2 {
+        padding: 10px 5%;
+    }
+
+    .space {
+        height: 60px;
+    }
+
+    .grid2selos {
+        padding: 0 0 30px 0;
+    }
+
+    .grid_principais {
+        column-gap: 5%;
+    }
+
+    .grid_principais p {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    /* Section 4: Está presente */
+    .clientes {
+        padding: 200px 0px 80px 0px;
+    }
+
+    .clientes p {
+        font-size: 20px;
+        line-height: 28px;
+        /* width: 90%; */
+        margin: 0 auto;
+        padding: 0 10%;
+    }   
+    
+    .grid3 {
+        padding: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5%;
+    }
+
+    /* Section 5: Portatil */
+    .grid4 {
+        margin: 50px 0;
+        /* background-size: 100% auto; */
+        /* background-position: 0% 0%; */
+        background-size: cover;
+        /* background-repeat: repeat-y; */
+        /* background-image: url(https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_purificadorfamiliacachorro_tablet.jpg); */
+        background-image: url("https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_mulher_espreguicando_992.png");
+    }
+
+    .grid4 h1 {
+        padding: 10px 0 10px 0;
+        max-width: 45%;
+    }
+
+    .grid4 p {
+        padding: 10px 0;
+        max-width: 51%;
+    }
+
+    .grid4 p.link {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .grid4>div {
+        max-width: 100%;
+        padding: 40px 40px;
+    }
+
+    /* ----- Section 6.5: Avaliacao ----- */
+    .grid65 {
+        grid-template-columns: 45% 48%;
+        gap: 7%;
+    }
+
+    .grid65>div:nth-child(3) {
+        display: none;
+    }
+
+    .consumidor {
+        display: flex;
+        gap: 20px;
+    }
+
+    .avaliacoes_link_grid {
+        margin-top: 20px;
+    }
+
+    /* Section 7: 8 Estagios */
+    .estagios h1 {
+        padding: 0 0 10px 0;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .estagios h1.adf_sensor_h1 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .estagios h3 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-bottom: 1em;
+    }
+
+    .grid5 {
+        /* grid-template-columns: calc(54% - 6px) calc(46% - 6px); */
+        /* align-items: start; */
+    }
+
+    .grid6 {
+        row-gap: 20px;
+        grid-auto-rows: auto;
+    }
+
+    .grid6 p {
+        font-size: 16px;
+    }
+
+    .grid7 {
+        grid-template-columns: 58% 42%;
+        padding: 0px 0px 0px 30px;
+        margin-top: 40px;
+    }
+
+    .grid7 h1 {
+        padding: 0;
+    }
+
+    .grid7 .desktop {
+        display: block;
+    }
+
+    .grid7 .tablet {
+        display: none;
+    }
+
+    /* ----- Section 7.5: Duvidas ----- */
+    .adf_duvidas {
+        gap: 10px;
+    }
+
+    .adf_duvidas p {
+        font-size: 18px;
+    }
+
+    /* Section 8: Modo Noturno */
+    .noturno {
+        padding: 54px 45% 64px 48px;
+    }
+
+    .grid9 {
+        display: grid;
+        grid-template-columns: 100%;
+        /* max-width: 63%; */
+        align-items: center;
+        row-gap: 40px;
+    }    
+
+    .grid9 img {
+        width: 74px;
+    }
+
+    .grid10 {
+        display: grid;
+        grid-template-columns: 47% 47%;
+        column-gap: 6%;
+        row-gap: 0;
+        margin-top: 52px;
+    }
+
+    .grid10 p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .flex10>div {
+        height: 100px;
+    }
+}
+
+/* Tablet 768 px */
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Remover em producao */
+    .px1920 {
+        display: none;
+    }
+    .px1440 {
+        display: none;
+    }
+    .px992 {
+        display: none;
+    }
+    .px768 {
+        display: block;
+    }
+    .px425 {
+        display: none;
+    }
+
+    .adf_page h1 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .adf_page h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .adf_page p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    /* Section 1: Green Air SS500-PRO */
+    .grid1 {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 0;
+        padding: 35px 25px;
+        margin-top: 60px;
+    }
+
+    .gridLeft .grid1-right img.section1-purificador {
+        width: 54%;
+        margin-top: 0;
+        /* margin-bottom: 30px; */
+        padding-top: 30px;
+    }
+
+    .gridRight .grid1-right img.section1-purificador {
+        width: 60%;
+        margin-top: -20px;
+    }
+
+    .gridBottom {
+        padding: 0 25px;
+    }
+
+    .space {
+        height: 40px;
+    }
+
+    .grid1 .grid1-left h1 {
+        padding: 0 0 1em 0;
+    }
+
+    .grid1 .grid1-left h2 {
+        /* font-size: 24px; */
+        /* line-height: 32px; */
+        max-width: 15em;
+    }
+
+    .grid1 .grid1-left p {
+        padding: 0 0 1.1em 0;
+    }
+
+    .grid1>.grid1-right {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 0 0 0 0;
+    }
+
+    .grid1>.grid1-right>div {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+    }
+
+    .grid1-right {
+        margin-top: 0%;
+    }
+
+    .grid1-right img.section1-purificador {
+        width: 100%;
+        padding: 0;
+        margin-top: 0px;
+    }
+
+    .grid1-right img.selos {
+        position: absolute;
+        width: 80%;
+        padding: 0;
+        /* padding: 0 0 0 22%; */
+        margin-top: 0%;
+        bottom: -35%;
+        /* align-self: center; */
+    }
+
+    .grid1-right img.anos5 {
+        width: 40%;
+        position: absolute;
+        right: unset;
+        left: -2%;
+        top: -2%;
+    }
+
+    /* Section 2: Caracteristicas */
+    .adf_grid_garantia_selos {
+        margin-top: -25px;
+        padding: 0 18%;
+        column-gap: 30px;
+        grid-template-columns: 18% calc(64% - 60px) 18%;
+    }
+
+    .grid2selos {
+        row-gap: 20px;
+        padding: 0;
+    }
+
+    .grid2 {
+        grid-template-columns: 31% 32% 31%;
+        padding: 39px 3%;
+        gap: 3%;
+    }
+
+    /* Section 3: Principais indicacoes */
+    .principais h1 {
+        padding: 60px 0 32px 56px;
+    }
+
+    .principais img.desktop {
+        display: none;
+    }
+
+    .principais img.tablet {
+        display: block;
+        border-radius: 15px;
+    }
+
+    .grid_principais {
+        column-gap: 6%;
+    }
+
+    .grid_principais p {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    /* Section 4: Está presente */
+    .clientes {
+        padding: 170px 0 0 0;
+    }
+
+    .clientes p {
+        padding: 0 10%;
+        font-size: 18px;
+        /* width: 90%; */
+        margin: 0 auto;
+        line-height: 24px;
+    }
+
+    .grid3 {
+        padding: 0 10%;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 5%;
+    }
+
+    /* Section 5: Portatil */
+    .grid4 {
+        margin: 50px 0;
+        background-size: auto 100%;
+        /* background-position: 60% 0%; */
+        /* background-image: url("https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_purificadorfamiliacachorro_tablet.jpg"); */
+        background-image: url("https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_mulher_espreguicando_768.png");
+        /* background-repeat: repeat-y; */
+        background-position: right;
+    }
+
+    .grid4 h1 {
+        padding: 10px 0 10px 0;
+        max-width: 45%;
+    }
+
+    .grid4 p {
+        padding: 10px 0;
+        max-width: 51%;
+    }
+
+    .grid4 p.link {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .grid4>div {
+        max-width: 100%;
+        padding: 15px 40px;
+    }
+
+    /* Section 6: video1 Ha 14 anos */
+    .video_1 {
+        padding: 0 0;
+        margin-top: 51px;
+    }
+
+    .video_1 h1 {
+        padding: 0 150px 23px 150px;
+    }
+    
+    .videoContainer {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    /* ----- Section 6.5: Avaliacao ----- */
+    .grid65 {
+        grid-template-columns: 46.75% 46.75%;
+    }
+
+    .grid65 div:nth-child(3) {
+        display: none;
+    }
+
+    .avaliacao p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .consumidor {
+        display: flex;
+        gap: 20px;
+    }
+
+    .avaliacoes_link_grid {
+        margin-top: 0px;
+    }
+
+    .avaliacoes_link_grid p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    /* Section 7: 8 Estagios */
+    .container-estagios {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .estagios {
+        box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.02);
+        box-shadow: none;
+        padding: 20px 0;
+        border-radius: 10px;
+    }
+
+    .estagios h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .estagios h1.estagios-tablet {
+        text-align: center;
+        padding: 0 40px 33px 40px;
+    }
+
+    .grid5 {
+        display: grid;
+        grid-template-columns: 100%;
+        align-items: center;
+        column-gap: 12px;
+    }
+
+    .grid5>.estagios-destaque {
+        grid-row: 1;
+        text-align: center;
+    }
+
+    .grid5 .estagios-destaque img {
+        width: 90%;
+    }
+
+    .grid6 {
+        grid-template-columns: 48px calc(100% - 48px - 20px);
+        row-gap: 10px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .grid7 {
+        padding: 0;
+        grid-template-columns: 100%;
+    }
+
+    .grid7 h1 {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .grid7 .desktop {
+        display: none;
+    }
+
+    .grid7 .tablet {
+        display: block;
+    }
+
+    /* ----- Section 7.5: Duvidas ----- */
+    .adf_duvidas {
+        gap: 10px;
+        margin: 0 0 40px 0;
+    }
+
+    .adf_duvidas p {
+        font-size: 17px;
+        line-height: 24px;
+        padding: 20px 0 15px 0;
+    }
+
+    .adf_duvidas img {
+        width: 80%;
+    }
+
+    /* Section 8: Modo Noturno */
+    .noturno {
+        padding: 50px 40% 50px 50px;
+        margin-top: 30px;
+    }
+
+    .grid9 {
+        grid-template-columns: 100%;
+        row-gap: 30px;
+    }
+
+    .grid9 img {
+        width: 75px;
+    }
+
+    .adf_grid_video {
+        grid-template-columns: calc(50% - 10px) calc(50% - 10px);
+        column-gap: 20px;
+        margin-top: -70px;
+    }
+
+    .video_1 {
+        margin-top: 0;
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .video_1 h1 {
+        padding: 0 1% 20px 1%;
+        font-size: 18px;
+        line-height: 24px;
+        /* max-width: 12em; */
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .adf_mais_detalhes h1 {
+        margin-bottom: 70px;
+    }
+
+    .adf_grid_mais_detalhes_left {
+        padding: 45px 0 40px 0;
+        grid-template-columns: 65% 35%;
+        justify-items: left;
+    }
+
+    .adf_mais_h13_image img {
+        right: 20px;
+        bottom: -25px;
+    }
+
+    .adf_mais_ss500_image img {
+        right: 0px;
+        bottom: -45px;
+    }
+
+    .adf_mais_detalhes h2 {
+        font-size: 16px;
+        line-height: 24px;
+        padding-left: 20px;
+    }
+
+    .videoContainer {
+        width: 100%;
+    }
+
+    /* Section 10: Certificacoes e INMETRO */
+    .certificacoes {
+        margin-top: 150px;
+    }
+
+    .certificacoes h1 {
+        padding: 0 0 30px 0;
+    }
+
+    .grid10 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 3%;
+        margin-top: 120px;
+    }
+
+    .flex10 {
+        gap: 20px;
+    }
+
+    .flex10>div {
+        height: 50px;
+        display: flex;
+        align-items: end;
+    }
+
+} /* End Tablet 768 px */
+
+/* Mobile 425 px */
+@media (min-width: 0px) and (max-width: 767px) {
+    /* Remover em producao */
+    .px1920 {
+        display: none;
+    }
+    .px1440 {
+        display: none;
+    }
+    .px992 {
+        display: none;
+    }
+    .px768 {
+        display: none;
+    }
+    .px425 {
+        display: block;
+    }
+
+    .adf_page {
+        /* padding-left: 0; */
+        /* padding-right: 0; */
+    }
+
+    .adf_container {
+        padding: 0;
+    }
+    
+    .adf_page h1 {
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+    }
+    
+    .adf_page h2 {
+        font-size: 16px;
+        line-height: 24px; /* 150% */
+    }
+
+    .adf_page p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    /* Section 1: Green Air SS500-PRO */
+    .adf_gridLR {
+        grid-template-columns: 100%;
+        row-gap: 50px;
+        column-gap: 0;
+    }
+
+    .grid1 {
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        column-gap: 0;
+        padding: 37px 20px;
+        border-radius: 16px;
+        margin-top: 0;
+    }
+
+    .grid1 .grid1-left h1 {
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .grid1 .grid1-left p {
+        padding: 0 0 1.1em 0;
+    }
+
+    .grid1>.grid1-right {
+        /* grid-row: 1; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 0 0 0;
+    }
+
+    .grid1>.grid1-right>div {
+        /* outline: 1px red solid; */
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 320px;
+        align-self: center;
+        margin-top: 0;
+    }
+
+
+
+    .grid1-right h1 {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 12em;
+        padding-bottom: 20px;
+    }
+
+    .grid1-right {
+        margin-top: 0;
+    }
+
+    .grid1-right img.section1-purificador {
+        width: 100%;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .grid1-right img.selos {
+        position: absolute;
+        width: 80%;
+        padding: 0;
+        /* padding: 0 0 0 22%; */
+        /* margin-top: 0; */
+        bottom: -110px;
+        /* align-self: center; */
+    }
+
+    .grid1-right img {
+        width: 100%;
+    }
+
+    .grid1-right img.anos5 {
+        width: 40%;
+        position: absolute;
+        right: 0%;
+        top: 30%;
+    }
+
+    .gridBottom {
+        padding: 0;
+    }
+
+    .gridRight .grid1-right img.section1-purificador {
+        margin-top: -30px;
+    }
+
+    /* Section 2: Caracteristicas */
+    .adf_grid_garantia_selos {
+        display: none;
+    }
+    .grid2 {
+        grid-template-columns: 100%;
+        gap: 30px;
+        padding: 30px 5% 20px 5%;
+        margin: 0 10%;
+        
+    }
+
+    .grid2selos {
+        padding: 0 0 0 0;
+        row-gap: 0;
+        margin-top: 40px;
+    }
+
+
+    /* Section 3: Principais indicacoes */
+    .grid_principais {
+        grid-template-columns: 1fr;
+    }
+
+    .grid_principais p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .principais {
+        padding: 0 10px;
+    }
+
+    .principais h1 {
+        padding: 50px 0 25px 0;
+        text-align: center;
+    }
+
+    /* Section 4: Está presente */
+    .clientes {
+        padding: 160px 10px 0 10px;
+    }
+
+    .clientes p {
+        padding: 0 20px;
+    }
+
+    .grid3 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 10px;
+        gap: 20px;
+
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 5%;
+        row-gap: 20px;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    .grid3 img {
+        width: 25%;
+    }
+
+    .grid3 img:nth-child(4) {
+        width: 30%;
+    }
+
+    .grid3 img:nth-child(5) {
+        width: 20%;
+    }
+
+    /* Section 5: Portatil */
+    .grid4 {
+        margin: 100px 0 60px 0;
+        /* background: url(https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_purificadorfamiliacachorro_mobile.png); */
+        /* background: url(../images/adf_h13max7_purificadorfamiliacachorro_mobile.png); */
+        background-image: url("https://images.tcdn.com.br/img/editor/up/1086843/adf_h13max7_mulher_espreguicando_375_2X.png");
+        background-position: bottom; 
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* max-height: 429px; */
+        text-align: center;
+    }
+
+    .grid4>div {
+        max-width: 100%;
+        padding: 40px 20px 300px 20px;
+    }
+
+    .grid4 h1 {
+        font-size: 18px;
+    }
+
+    .grid4 p.link {
+        font-size: 14px;
+        line-height: 18px;
+        /* padding-bottom: 50px; */
+    }
+
+    /* Section 6: video1 Ha 14 anos */
+    .video_1 {
+        padding: 0;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .video_1 h1 {
+        padding: 0 0 20px 0;
+    }
+
+    .videoContainer {
+        width: 100%;
+    }
+
+    /* ----- Section 6.5: Avaliacao ----- */
+    .avaliacao {
+        margin-top: 80px;
+    }
+
+    .avaliacao h1 {
+        padding: 0 5%;
+    }
+    .stars-center {
+        margin-top: -116px;
+    }
+    .stars {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+    
+    .grid65 {
+        grid-template-columns: 100%;
+        padding: 50px 30px;
+    }
+
+    .stars img {
+        width: 12%;
+    }
+
+    .consumidor {
+        grid-template-columns: calc(55% - 10px) 1fr;
+        column-gap: 10px;
+        align-items: baseline;
+    }
+
+    .consumidor p {
+        display: inline;
+        font-size: 16px;
+        padding: 0;
+        line-height: 28px;
+    }
+
+
+    .consumidor img {
+        /* background: red; */
+        width: 100%;
+    }
+
+    .avaliacoes_link_grid {
+        margin-top: 80px;
+    }
+
+    .avaliacoes_link_grid p {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* Section 7: 8 Estagios */
+    .container-estagios {
+        padding: 0 0px;
+        margin-bottom: 50px;
+        grid-template-columns: 100%;
+    }
+
+    .estagios {
+        padding: 30px 10px 20px 10px;
+        box-shadow: 0px 4px 0px 0px rgba(0, 0, 0, 0.04);
+    }
+
+    .estagios h1 {
+        text-align: center;
+        padding: 0 0 0 0;
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .estagios h3 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .estagios h1.estagios-tablet {
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+
+    .grid5 {
+        grid-template-columns: 100%;
+    }
+
+    .grid5>.estagios-destaque {
+        grid-row: 1;
+    }
+
+    .grid5 .estagios-destaque img {
+        width: 100%;
+    }
+
+    .grid6 {
+        grid-template-columns: 48px calc(100% - 48px - 20px);
+        row-gap: 5px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .grid6 p {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .grid7 {
+        grid-template-columns: 100%;
+        padding: 0;
+        margin-top: 40px;
+        row-gap: 20px;
+    }
+
+    .grid7 h1 {
+        text-align: center;
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 20px;
+    }
+
+    .grid7 img {
+        width: 100%;
+    }
+
+    /* ----- Section 7.5: Duvidas ----- */
+    .adf_duvidas {
+        padding: 20px 25px;
+        align-items: end;
+        justify-content: left;
+        gap: 15px;
+    }
+
+    .adf_duvidas p {
+        padding: 0; 
+        line-height: 24px;
+        font-size: 18px;
+        text-align: left;
+        /* max-width: 80%; */
+    }
+
+    .adf_duvidas span {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .adf_duvidas img {
+        width: unset;
+        max-width: unset;
+    }
+
+    /* Section 8: Modo Noturno */
+    .noturno {
+        margin: 0;
+        background: url(https://images.tcdn.com.br/img/editor/up/1086843/adf_stockphotoserenecalmafricanamericanwomansleepingincomfortablebedlyingonsoftpilloworthopedic1444222010_1_degmobile.png);
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 0;
+        margin-top: 48px;
+    }
+
+    .grid9 {
+        grid-template-columns: 100%;
+        max-width: 100%;
+        padding: 50px 43px 280px 43px;
+        justify-items: center;
+        text-align: center;
+        row-gap: 40px;
+    }
+
+    .grid9 p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .grid9 img {
+        width: 30%;
+    }
+
+    /* Section 10: Certificacoes e INMETRO */
+    .certificacoes {
+        padding: 0;
+        margin-top: 50px;
+    }
+
+    .certificacoes .wrapper {
+        padding: 36px 10px;
+        transform: translateY(0);
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .certificacoes h1 {
+        padding: 0px 20px 32px 20px;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    .ale_sgs {
+        margin: 40px auto 0 auto;
+        padding: 0 5%;
+    }
+
+    .ale_sgs img {
+        border-radius: 15px;
+    }
+
+    .dados h1 {
+        font-size: 20px;
+        line-height: 24px;
+        padding: 0 25px 32px 25px;
+    }
+
+    .grid10 {
+        grid-template-columns: 100%;
+        gap: 0;
+        row-gap: 50px;
+        margin-top: 0;
+    }
+
+    .flex10 {
+        align-items: center;
+        gap: 24px;
+        text-align: center;
+    }
+
+    .flex10>div {
+        height: auto;
+    }
+
+    .grid11 {
+        grid-template-columns: 30% 65%;
+    }
+
+    .grid11 p {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .grid11_importante {
+        grid-template-columns: 100%;
+    }
+
+    .adf_duvidas {
+        margin: 10px 0 10px 0;
+    }
+
+    .h1-max-width {
+        max-width: 70%;
+    }
+
+    .h2-max-width {
+        max-width: 65%;
+    }
+
+    .grid7 .desktop {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+    .mobile {
+        display: block;
+    }
+
+}
+/* </style> */
